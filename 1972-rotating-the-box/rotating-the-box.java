@@ -14,13 +14,12 @@ class Solution {
                 }
                 else if(box[i][j]=='*')
                 {
-                    //arr.add(3);
+                    
                     Collections.sort(arr);
                     int t1=0;
                     for(int j1=0;j1<arr.size();j1++)
                     {    
                         int x=arr.get(j1);
-                        System.out.println(x);
                         if(x==1)
                           box[i][t]='.';
                         else if(x==2)
@@ -31,7 +30,6 @@ class Solution {
                     }
                     arr.clear();
                     t=j+1;
-                    //System.out.println();
                 }
                 else
                 {
